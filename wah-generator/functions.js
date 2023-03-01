@@ -2703,6 +2703,7 @@ const h_words = [
   "henrys",
   "hens",
   "hent",
+  "hentai",
   "hented",
   "henting",
   "hents",
