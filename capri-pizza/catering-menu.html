@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Catering Menu | Capri Pizza</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+<div class="Main_Flex">
+  <body>
+    <section class="logoContainer">
+  <a href="home-page.html"><img src="images/logo-capri22.png"></a>
+</section>
+<h1><u>Catering Menu</u></h1>
+
+<section class="buttons">
+<button class="tabs" onclick="openTab(event, 'PartyTray')" id="defaultOpen"> Party Tray Appetizers</button>
+<button class="tabs" onclick="openTab(event, 'SaladTray')"> Salad Tray</button>
+<button class="tabs" onclick="openTab(event, 'PastaTray')"> Pasta Tray</button>
+</section>
+
+<section class="Menu">
+
+  <div id="PartyTray" class="tabcontent">
+        <h2><u>Party Tray</u></h2>
+    <p>
+      Bruschetta<br><br>
+
+      Appetizer Combo<br>
+      Mozzarella sticks, Jalapeno Poppers, Onion Rings, Boneless Wings<br><br>
+
+      Antipasto all'Italiana<br>
+      Bruschetta, Salami, Ham, Provolone Cheese, Olives, Roasted Peppers & Mozzarella Cheese<br><br>
+
+      Mozzarella Sticks<br><br>
+
+      Chicken Fingers<br><br>
+    </p>
+  </div>
+
+  <div id="SaladTray" class="tabcontent">
+    <div class="Info">
+      <p2>All salads are served with homemade
+          fresh bread and your choice of dressing:
+          French, Ranch, Caesar, Creamy Italian, Honey Mustard,
+          Oil & Vinegar, Balsamic, Blue Cheese.</p2>
+    </div>
+
+    <h2><u>Salad Tray</u></h2>
+    <p>
+      House Salad<br><br>
+      Your choice Salad<br><br>
+      Caesar Salad<br><br></p>
+  </div>
+
+<section class="scrollbox">
+  <div id="PastaTray" class="tabcontent">
+    <div class="Info">
+      <p2> Served with homemade bread and house salad.
+        You may substitute linguini, penne or spaghetti.</p2>
+    </div>
+    <h2><u>Pasta Tray</u></h2>
+    <p>
+  Marinara Sauce<br><br>
+
+  Cheese Ravioli<br><br>
+
+
+  Baked Ziti<br>
+  Homemade Tomato Sauce, Ricotta Cheese topped with Mozzarella<br><br>
+
+  Stuffed Shells<br><br>
+
+  Lasagna<br><br>
+
+  Vodka Sauce<br><br>
+
+  Chicken Marsala<br><br>
+
+  Pasta Chicken Marsala<br><br>
+
+  Chicken Cacciatore<br><br>
+
+  Pasta Chicken Cacciatore<br><br>
+
+  Sausage Peppers<br><br>
+
+  Pasta Sausage and Peppers<br><br>
+
+  Side of MeatBall<br><br>
+
+  Side of Sausage<br><br>
+
+  Broccoli Rabe<br><br>
+
+  Spinach Oil & Garlic<br><br>
+  </p>
+</div>
+</section>
+
+</section>
+
+
+<script>
+
+document.getElementById("defaultOpen").click();
+
+function openTab(evt, tabOne, tabTwo)
+{
+var i, tabcontent, tablinks;
+
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++)
+{
+  tabcontent[i].style.display = "none";
+}
+
+tablinks = document.getElementsByClassName("tabs");
+for (i = 0; i < tablinks.length; i++) {
+  tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+
+document.getElementById(tabOne).style.display = "block";
+evt.currentTarget.className += " active";
+
+document.getElementById(tabTwo).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+</script>
+
+  </body>
+
+</div>
+</html>

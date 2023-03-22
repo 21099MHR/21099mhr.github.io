@@ -1,0 +1,202 @@
+@keyframes backgroundFade {
+  0%    {background-image: url("images/DSC_0045.jpg");    }
+  25%  {background-image: url("images/DSC_0045.jpg");     }
+  50%  {background-image: url("images/capri-pizza.jpg");  }
+  75%  {background-image: url("images/capri-pizza.jpg");  }
+  100%    {background-image: url("images/DSC_0045.jpg");  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.Main_Flex{
+  display: flex;
+  animation: 20s backgroundFade infinite;
+  z-index: 0;
+  height: 1000px;
+  width: 1920px;
+  flex-flow: column;
+  background-color: #998F8A;
+}
+
+.logoContainer{
+  flex-direction: row;
+  align-items: center;
+  background-color: #998F8A;
+  width: 12%;
+  opacity: 75%;
+  border-radius: 10px;
+}
+
+.dividingBar{
+  height: 725px;
+  width: 5px;
+  background-color: #FF1A14;
+}
+
+.scrollboxContainer{
+  display: flex;
+  background-color: #27630F;
+  opacity: 75%;
+  height: 725px;
+  width: 1000px;
+  align-self: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+  .scrollboxOne{
+    color: #E5FFE6;
+    overflow: auto;
+    height: 725px;
+    width: 400px;
+    padding-left: 5%;
+  }
+
+  .scrollboxTwo{
+    color: #E5FFE6;
+    overflow: auto;
+    height: 725px;
+    width: 400px;
+    padding-right: 5%;
+  }
+
+  .buttons{
+    flex-flow: column;
+    width: 950px;
+    align-items: center;
+    padding-left: 27%;
+    padding-bottom: 1px;
+  }
+
+  .tabcontent{
+    display: none;
+  }
+
+    button{
+      color: #E5FFE6;
+      background-color: #27630F;
+      border-color: #CC6536;
+    }
+
+  h1{
+    color: #E5FFE6;
+    font-size: 35px;
+    background-color: #27630F;
+    background-size: contain;
+    align-self: center;
+    border-radius: 10px;
+  }
+
+  h2{
+    color: #E5FFE6;
+    padding-left: 15%;
+  }
+
+  a{
+    text-decoration: none;
+    color: #E5FFE6;
+  }
+
+  img{
+    padding-right: 0;
+  }
+
+  p{
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  u{
+    text-decoration-color:  #FF1A14;
+  }
+
+  .Main_Flex{
+    display: flex;
+    flex-flow: row;
+    animation: 20s backgroundFade infinite;
+    z-index: 0;
+    height: 1000px;
+    width: 1920px;
+    justify-content: center;
+  }
+
+  .logoContainer{
+    flex-direction: row;
+    align-items: center;
+    background-color: #998F8A;
+    width: 50%;
+    opacity: 75%;
+    border-radius: 10px;
+    margin-left: 25%;
+  }
+
+  .MenuContainer{
+    display: flex;
+    flex-flow: column;
+    background-color: #27630F;
+    opacity: 75%;
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+  }
+
+  .relevantDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Hours{
+    display: flex;
+    background-color: #CC6536;
+    width: 200px;
+    height: 212px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  .Locations{
+    display: flex;
+    background-color: #CC6536;
+    width: 200px;
+    height: 212px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+
+    h1{
+      font-size: 40px;
+      color: #E5FFE6;
+      z-index: 1;
+      align-self: center;
+    }
+
+    li{
+      margin-left: 35%;
+      list-style: none;
+      z-index: 1;
+      align-self: center;
+    }
+
+    a{
+      font-size: 35px;
+      color: white;
+      text-decoration: none;
+    }
+
+    p{
+      color: #E5FFE6;
+      font-size: 20px;
+    }
+
+    p2{
+      font-size: 15px;
+    }
+
+    u{
+      text-decoration-color:  #FF1A14;
+    }
